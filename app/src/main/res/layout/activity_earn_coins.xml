@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EarnCoins">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Available Coins"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="0"
+        android:textSize="50dp"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/whiteborder"
+        android:text="After Collecting 20 coins You can Ride"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btn_earn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="startVideoAd"
+        android:background="@drawable/whiteborder"
+        android:text="Earn Coins By Watching Videos"
+        android:textColor="@color/colorPrimary"/>
+</RelativeLayout>

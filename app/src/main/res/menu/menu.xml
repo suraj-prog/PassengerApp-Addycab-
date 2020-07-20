@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_book_your_ride"
+            android:icon="@drawable/ic_book_your_ride"
+            android:title="Book Your Ride" />
+        <item
+            android:id="@+id/nav_earn_coins"
+            android:icon="@drawable/ic_money"
+            android:title="Earn Coins" />
+          <item
+              android:id="@+id/nav_profile"
+              android:icon="@drawable/ic_image"
+              android:title="Profile" />
+        <item
+            android:id="@+id/nav_findRestaurant"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Search for Restaurant" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_navigate"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="LogOut" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+        </menu>
+    </item>
+</menu>
